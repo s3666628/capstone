@@ -1,0 +1,44 @@
+# 0.6
+
+- Added meta tag to the portal base template to allow automated scanning for
+  security vulnerabilities - PID-31 https://trello.com/c/V0mEibUX             
+- Added unit tests for URL correctness
+
+# 0.5
+
+- PID-36 https://trello.com/c/4LSpAshf: Parking trends page                 
+- PID-35 https://trello.com/c/nBrSkPg0: Registration page and app design    
+refresh                                                                     
+- PID-40 https://trello.com/c/16jJQHPs: Trends visualisation update         
+- PID-41 https://trello.com/c/hNwNwKMY: Trends visualisation update         
+- CR-01 https://trello.com/c/KA6EE8mX 
+
+# 0.4
+
+- PID-25: As a user, I want to be able to apply filters over the            
+  visualisations I'm viewing so that I can slice data down to particular      
+  segments that I want to see.                                              
+- PID-26: As a user, I want to be able to see the top 10 busiest streets in 
+  the Victorian CBD so that I am able to distinguish where the busiest streets
+  are.                                                                       
+- PID-28: As a user, I want to be able to see the density of parking        
+  violations displayed as a heat map so that I am able to distinguish where   
+  the most parking violations occur.
+
+# 0.3
+
+- PID-03 https://trello.com/c/oSnAoGwb                                      
+- PID-20 https://trello.com/c/XlhqlwwG                                      
+- PID-19 https://trello.com/c/mjyFzOgg                                      
+- Automated DB migration on deploy                                          
+- Bumped Django version due to security vulnerability                       
+- Unit tests for PID-04 https://trello.com/c/YqumY6B3 
+
+# 0.2
+
+- View Melbourne parking visualisation data within the application
+  https://lav-app.herokuapp.com/portal_home/
+
+# 0.1
+
+- Inital application release
