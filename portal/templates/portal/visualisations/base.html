@@ -1,0 +1,31 @@
+{% extends "portal/base.html" %}
+{% block content %}
+<div class="container mt-4">
+    <div class="card border-0 shadow">
+        <div class="card-header">
+            <ul class="nav nav-tabs card-header-tabs">
+                <li class="nav-item">
+                    {% url 'trends' as url %}
+                    <a class="nav-link {% if request.path == url %}active{% endif %}"
+                        href="{% url 'trends' %}">Trends</a>
+                </li>
+                <li class="nav-item">
+                    {% url 'mapping' as url %}
+                    <a class="nav-link {% if request.path == url %}active{% endif %}"
+                        href="{% url 'mapping' %}">Mapping</a>
+                </li>
+                <li class="nav-item">
+                    {% url 'top_ten' as url %}
+                    <a class="nav-link {% if request.path == url %}active{% endif %}" href="{% url 'top_ten' %}">
+                        Top 10</a>
+                </li>
+            </ul>
+        </div>
+        <div class="card-body p-0 pt-4">
+            <div class="visualisation-container">
+                {% block visualisation %}{% endblock visualisation %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
